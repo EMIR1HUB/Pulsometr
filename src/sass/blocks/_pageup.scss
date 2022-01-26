@@ -1,0 +1,12 @@
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 50%;
+    transform: translate(50%);
+    width: 30px;
+    height: 30px;
+    img {
+        width: 100%;
+    }
+}
