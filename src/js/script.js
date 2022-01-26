@@ -38,22 +38,22 @@ $(document).ready(function () {      //использование slick && jquer
 
     // Modal
 
-    $('[data-modal=consultation]').on('click', function () {
+    $('[data-modal=consultation]').on('click', function() {
         $('.overlay, #consultation').fadeIn('slow');
     });
-    $('.modal__close').on('click', function () {
+    $('.modal__close').on('click', function() {
         $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
     });
 
-    $('.button_mini').each(function (i) {
-        $(this).on('click', function () {
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
             $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
             $('.overlay, #order').fadeIn('slow');
-        });
+        })
     });
 
 
-    function validateForms(form) {
+    function validateForms(form){
         $(form).validate({
             rules: {
                 name: {
@@ -73,8 +73,8 @@ $(document).ready(function () {      //использование slick && jquer
                 },
                 phone: "Пожалуйста, введите свой номер телефона",
                 email: {
-                    required: "Пожалуйста, введите свою почту",
-                    email: "Неправильно введен адрес почты"
+                  required: "Пожалуйста, введите свою почту",
+                  email: "Неправильно введен адрес почты"
                 }
             }
         });

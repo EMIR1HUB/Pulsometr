@@ -37,19 +37,19 @@
         font-weight: 500;
         text-align: center;
     }
-    &_mini{
+    &_mini {
         min-height: 60px;
     }
     .error {
         border: 1px solid red;
     }
-    label.erroe {
+    label.error {
         border: none;
         text-align: center;
         margin-bottom: 15px;
     }
 }
 
-#consultation, #order, #thinks{
+#consultation, #order, #thanks {
     display: none;
 }
